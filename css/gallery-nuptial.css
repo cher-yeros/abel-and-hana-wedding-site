@@ -1,0 +1,132 @@
+/* Nuptial-style gallery page UI */
+
+/* Light nav for gallery page */
+body.gallery-page .fh5co-nav {
+  position: relative;
+  background: #fff;
+  padding: 25px 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+body.gallery-page .fh5co-nav #fh5co-logo a {
+  color: #222;
+  font-family: "Sacramento", cursive;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+body.gallery-page .fh5co-nav ul li a {
+  color: #444;
+}
+
+body.gallery-page .fh5co-nav ul li a:hover,
+body.gallery-page .fh5co-nav ul li a:focus,
+body.gallery-page .fh5co-nav ul li a:active {
+  color: #c45c5c;
+}
+
+body.gallery-page .fh5co-nav ul li.active > a {
+  color: #c45c5c !important;
+}
+
+/* Minimal header - slim bar with title only */
+body.gallery-page #fh5co-header {
+  min-height: 200px;
+  padding: 4em 0;
+}
+
+body.gallery-page #fh5co-header .display-tc h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+body.gallery-page #fh5co-header .display-tc h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+/* Masonry gallery grid - override default flex list */
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap#fh5co-gallery-list {
+  display: block;
+  float: none;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  column-gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+  #fh5co-gallery.gallery-masonry .gallery-masonry-wrap {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #fh5co-gallery.gallery-masonry .gallery-masonry-wrap {
+    column-count: 1;
+  }
+}
+
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap .gallery-item {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 1rem;
+  padding: 0;
+  min-height: 0;
+  float: none;
+  clear: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+  position: relative;
+  display: block;
+}
+
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap .gallery-item a {
+  display: block;
+  min-height: 0;
+  padding: 0;
+}
+
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap .gallery-item a:before {
+  display: none;
+}
+
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+#fh5co-gallery.gallery-masonry
+  .gallery-masonry-wrap
+  .gallery-item
+  .case-studies-summary {
+  display: none;
+}
+
+/* Optional hover overlay - minimal */
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap .gallery-item a:hover img {
+  opacity: 0.92;
+}
+
+#fh5co-gallery.gallery-masonry .gallery-masonry-wrap .gallery-item img {
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+/* White content area, adequate padding */
+body.gallery-page #fh5co-gallery {
+  background: #fff;
+  padding: 4em 0;
+}
