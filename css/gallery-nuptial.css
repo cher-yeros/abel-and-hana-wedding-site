@@ -1,34 +1,6 @@
 /* Nuptial-style gallery page UI */
 
-/* Light nav for gallery page */
-body.gallery-page .fh5co-nav {
-  position: relative;
-  background: #fff;
-  padding: 25px 0;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-}
-
-body.gallery-page .fh5co-nav #fh5co-logo a {
-  color: #222;
-  font-family: "Sacramento", cursive;
-  font-size: 42px;
-  font-weight: 400;
-}
-
-body.gallery-page .fh5co-nav ul li a {
-  color: #444;
-}
-
-body.gallery-page .fh5co-nav ul li a:hover,
-body.gallery-page .fh5co-nav ul li a:focus,
-body.gallery-page .fh5co-nav ul li a:active {
-  color: #c45c5c;
-}
-
-body.gallery-page .fh5co-nav ul li.active > a {
-  color: #c45c5c !important;
-}
+/* Nav uses default style (same as contact) - transparent over header, white text */
 
 /* Minimal header - slim bar with title only */
 body.gallery-page #fh5co-header {
