@@ -105,7 +105,7 @@
         id="fh5co-header"
         class="fh5co-cover"
         role="banner"
-        style="background-image: url(phootshoot/ABR06023.jpg)"
+        style="background-image: url(https://abelhana.finaloopai.com/photoshoot/ABR06023.jpg)"
         data-stellar-background-ratio="0.5"
       >
         <div class="overlay"></div>
@@ -184,7 +184,7 @@
       <div
         id="fh5co-event"
         class="fh5co-bg"
-        style="background-image: url(phootshoot/ABR05935.jpg)"
+        style="background-image: url(https://abelhana.finaloopai.com/photoshoot/ABR05935.jpg)"
       >
         <div class="overlay"></div>
         <div class="container">
@@ -362,7 +362,7 @@
           <div class="row row-bottom-padded-md">
             <div class="col-md-12">
               <ul class="gallery-masonry-wrap" id="fh5co-gallery-list">
-                <!-- Photos from phootshoot folder loaded by script below -->
+                <!-- Photos from https://abelhana.finaloopai.com/photoshoot/ loaded by script below -->
               </ul>
             </div>
           </div>
@@ -558,7 +558,7 @@
       <div
         id="fh5co-started"
         class="fh5co-bg"
-        style="background-image: url(phootshoot/ABR05199.jpg)"
+        style="background-image: url(https://abelhana.finaloopai.com/photoshoot/ABR05199.jpg)"
       >
         <div class="overlay"></div>
         <div class="container">
@@ -670,7 +670,7 @@
       });
     </script>
 
-    <!-- Gallery: load all images from phootshoot folder -->
+    <!-- Gallery: load all images from https://abelhana.finaloopai.com/photoshoot/ -->
     <script>
       (function () {
         var photoshootImages = [
@@ -788,12 +788,12 @@
           "ABR06983.jpg",
           "ABR07009.jpg",
         ];
-        var basePath = "phootshoot/";
+        var PHOTOSHOOT_BASE = "https://abelhana.finaloopai.com/photoshoot/";
         var list = document.getElementById("fh5co-gallery-list");
         if (list) {
           // Show only a few photos on the home page (full gallery on gallery.html)
           photoshootImages.slice(0, 9).forEach(function (filename) {
-            var src = basePath + filename;
+            var src = PHOTOSHOOT_BASE + filename;
             var li = document.createElement("li");
             li.className = "gallery-item animate-box";
             li.setAttribute("data-animate-effect", "fadeIn");
